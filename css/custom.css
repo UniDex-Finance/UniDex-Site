@@ -29,7 +29,7 @@ body{
 	padding-bottom:5rem !important;
 }
 .sec-one{
-	padding-top:20rem;
+	padding-top:297px;
 	border-right:1.5px solid #505050;
 }
 .sec-one h1{
@@ -54,7 +54,8 @@ body{
 	margin-bottom:15rem !important;
 }
 .sec-container{
-	background: #202021;
+background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(20px);
 	padding-top:4rem;
 	padding-bottom: 4rem;
 	border-radius: 16px;
@@ -153,12 +154,37 @@ body{
 	padding-bottom: 10rem;
 }
 .sixth-logos{
-	background: rgba(255, 255, 255, 0.05);
-backdrop-filter: blur(50px);
+	
 	padding-top:5rem;
 	padding-bottom:5rem;
 	border-radius: 16px;
+	height: 550px;
+	overflow-y: scroll;
 }
+#style-4::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: grey;
+		border-radius: 23px;
+
+}
+
+#style-4::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: transparent;
+		border-radius: 23px;
+
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+	background-color: white;
+	border-radius: 23px;
+	padding: 2rem;
+}
+
+
 .seventh-container{
 	background: #171719;
 	padding-top:10rem;
@@ -218,7 +244,7 @@ border-radius: 16px;
 }
 .contact-form{
 	background: rgba(255, 255, 255, 0.05);
-backdrop-filter: blur(20px);
+backdrop-filter: blur(2px);
 	border-radius: 16px;
 	padding-left:2rem;
 	padding-right:2rem;
@@ -322,6 +348,18 @@ backdrop-filter: blur(20px);
 		padding-top:0 !important;
 		padding-left:1rem !important;
 		padding-right:1rem !important;
+	}
+	.sec-one{
+		border-right:0 !important;
+	}
+	.sitxth-first{
+		padding-top:3rem;
+	}
+	.fifth-first{
+		padding-bottom: 0rem;
+	}
+	.row1{
+		padding-bottom: 5rem;
 	}
 }
 .faq-tabs{
