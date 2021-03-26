@@ -5,8 +5,145 @@
 	font-family:'Akira.otf';
 }
 body{
-
+	background-color: #141415;
+	overflow-x: hidden;
 }
+@keyframes animate{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+#bg-radial-0 {
+	/* Ellipse 59 */
+	position: absolute;
+	width: 55vw;
+	height: 55vw;
+	left: -21.7vw;
+	top: 54px;
+
+	scale: 1;
+
+	background: radial-gradient(50% 50% at 50% 50%, #E56A7A 0%, rgba(196, 196, 196, 0) 100%);
+	opacity: 0.09;
+
+  animation: animate 5.5s ease-in-out infinite;
+}
+#bg-radial-1 {
+	/* Ellipse 60 */
+	position: absolute;
+	width: 55vw;
+	height: 55vw;
+	left: 53vw;
+	top: -15.4vw;
+
+	background: radial-gradient(50% 50% at 50% 50%, #00F0E2 0%, rgba(196, 196, 196, 0) 100%);
+	opacity: 0.1;
+  animation: animate 5.5s ease-in-out infinite;
+}
+#bg-radial-2 {
+	/* Ellipse 45 */
+	position: absolute;
+	width: 55vw;
+	height: 55vw;
+	left: 3px;
+	top: 48px;
+
+	background: radial-gradient(50% 50% at 50% 50%, #00F0E2 0%, rgba(196, 196, 196, 0) 100%);
+	opacity: 0.1;
+  animation: animate 5.5s ease-in-out infinite;
+}
+@keyframes animate3{
+  0%{
+    transform: scale(1) rotate(-32.4deg);
+  }
+  50%{
+    transform: scale(1.2) rotate(147.6deg);
+  }
+  100%{
+    transform: scale(1) rotate(327.6deg);
+  }
+}
+#bg-radial-3 {
+	/* Ellipse 58 */
+	position: absolute;
+	width: 85vw;
+	height: 80.7vw;
+	left: 43.6vw;
+	top: 25vw;
+
+	background: radial-gradient(50% 50% at 50% 50%, #FF617D 0%, rgba(255, 97, 125, 0.658767) 29.95%, rgba(255, 97, 125, 0) 89.46%);
+	opacity: 0.25;
+	transform: rotate(-32.4deg);
+  animation: animate3 5.5s ease-in-out infinite;
+}
+@keyframes animate4{
+  0%{
+    transform: scale(1), rotate(-24.51deg);
+  }
+  50%{
+    transform: scale(1.2), rotate(155.49deg);
+  }
+  100%{
+    transform: scale(1), rotate(335.49deg);
+  }
+}
+#bg-radial-4 {
+		/* Ellipse 57 */
+	position: absolute;
+	width: 62vw;
+	height: 38vw;
+	left: -20.8vw;
+	top: 615px;
+
+	background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 194, 0.89) 0%, rgba(0, 255, 194, 0.658767) 29.95%, rgba(0, 255, 194, 0) 89.46%);
+	opacity: 0.05;
+	transform: rotate(24.51deg);
+  animation: animate4 5.5s ease-in-out infinite;
+}
+#bg-radial-5 {
+	/* Ellipse 52 */
+	position: absolute;
+	width: 63.5vw;
+	height: 46.3vw;
+	left: -34.7vw;
+	top: 0px;
+
+	background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 194, 0.089) 0%, rgba(0, 255, 194, 0.0658767) 29.95%, rgba(0, 255, 194, 0) 89.46%);
+	transform: rotate(25.16deg);
+  animation: animate3 5.5s ease-in-out infinite;
+}
+#bg-radial-6 {
+	/* Ellipse 58 */
+	position: absolute;
+	width: 78.8vw;
+	height: 74.4vw;
+	left: -58vw;
+	top: 6138.29px;
+
+	background: radial-gradient(50% 50% at 50% 50%, #FF617D 0%, rgba(255, 97, 125, 0.658767) 29.95%, rgba(255, 97, 125, 0) 89.46%);
+	opacity: 0.18;
+	transform: rotate(-32.4deg);
+  animation: animate3 5.5s ease-in-out infinite;
+}
+#bg-radial-7 {
+	/* Ellipse 61 */
+	position: absolute;
+	width: 63.7vw;
+	height: 55vw;
+	left: 76vw;
+	top: 0;
+
+	background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 194, 0.089) 0%, rgba(0, 255, 194, 0.0658767) 29.95%, rgba(0, 255, 194, 0) 89.46%);
+	transform: rotate(25.16deg);
+  animation: animate3 5.5s ease-in-out infinite;
+}
+
 .navbar-nav li{
 	margin: 1rem;
 	padding-left:1.5rem;
@@ -23,8 +160,14 @@ body{
 	color:white;
 	border: 1px solid white;
 }
+.title {
+	font-family: 'Akira.otf';
+	font-size: xxx-large;
+	line-height: 150%;
+	color: #FFFFFF;
+}
 .cont-first{
-	background: url("../img/top-bg.png");
+	/* background: url("../img/top-bg.png"); */
 	background-size: cover;
 	padding-bottom:5rem !important;
 }
@@ -71,12 +214,10 @@ backdrop-filter: blur(20px);
 .sec-three p{
 	color: #a8a8a9;
 }
-.third-container{
-	background: #171719;
-	padding-top:5rem;
+.third-container .title {
+	margin-bottom: 100px;
 }
 .fourth-container{
-	background: #141415;
 }
 .sec-five{
 	padding-top:20rem;
@@ -116,7 +257,7 @@ backdrop-filter: blur(20px);
 }
 .fifth-container{
 	padding: 0;
-	background: url("../img/mirai-full-bg.png");
+	/* background: url("../img/mirai-full-bg.png"); */
 	background-size:cover;
 }
 .fifth-first{
@@ -148,13 +289,13 @@ backdrop-filter: blur(20px);
 
 }
 .sixth-container{
-	background: url("../img/logos-bg.png");
+	/* background: url("../img/logos-bg.png"); */
 	background-size: cover;
 	padding-top:15rem;
 	padding-bottom: 10rem;
 }
 .sixth-logos{
-	
+
 	padding-top:5rem;
 	padding-bottom:5rem;
 	border-radius: 16px;
@@ -208,7 +349,7 @@ backdrop-filter: blur(20px);
 .eigth-container{
 	padding-top:10rem;
 	padding-bottom:10rem;
-	background: url("../img/learn-more.png");
+	/* background: url("../img/learn-more.png"); */
 	background-size: cover;
 }
 .social-bg{
@@ -224,7 +365,7 @@ border-radius: 16px;
 	border-right: 1px dashed grey;
 }
 .faq-first-cont{
-	background: url("../img/faq-bg.png");
+	/* background: url("../img/faq-bg.png"); */
 	background-size:cover;
 	border-bottom-left-radius:100px;
 	border-bottom-right-radius:100px;
@@ -233,7 +374,7 @@ border-radius: 16px;
 		margin-bottom:10rem;
 }
 .contact-first-cont{
-	background: url("../img/contact-bg.png");
+	/* background: url("../img/contact-bg.png"); */
 	background-size:cover;
 	border-bottom-left-radius:100px;
 	border-bottom-right-radius:100px;
@@ -366,7 +507,7 @@ backdrop-filter: blur(2px);
 		border-radius:16px;
 	    background: rgb(31 31 34);
 
-	
+
 }
 .fixed-top.scrolled {
 	width: 100%;
