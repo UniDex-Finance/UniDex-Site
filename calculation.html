@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled Document</title>
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background: #131316">
+    <nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center fixed-top">
+        <a href="index.html" class="navbar-brand d-flex  mr-auto"><img src="img/logo.png" class="img-fluid" width="100"></a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link nav-link2" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link2" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+					<a class="nav-link nav-link2" href="calculation.html">Reward Calculator</a>
+				</li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-secondary" href="#">App</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="col-xl-12 faq-first-cont">
+        <div class="col-xl-11 m-auto">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xl-6 sec-six">
+                    <h1 class="text-white text-center text-xl-left">Reward calculator</h1>
+
+                </div>
+
+                <div class="col-xl-6 text-center text-xl-right">
+                    <img src="img/Union.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-calculator-box-container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left-calculation-holder">
+                        <div class="calculator-box">
+                            <div class="trans-headeing">
+                                <h1>Daily Transections - <input id="transectionValues" type="number" name="rng" min="0" max="9999999" step="1"
+                                     placeholder="Type number" onchange="setTransnationsValue()"></h1>
+                                <span id="transValue">0</span>
+                            </div>
+                            <div class="calc-bar">
+                                <input id="transections" type="range" name="rng" min="0" max="9999999" step="1"
+                                    value="0" oninput="setTransnations()" />
+                            </div>
+                        </div>
+
+                        <div class="calculator-box">
+                            <div class="trans-headeing">
+                                <h1>Number of UNIDX tokens - <input id="unidexTokenValues" type="number" name="rng" min="0" max="9999999" step="1"   placeholder="Type number" onchange="setUnidexTokenValues()"> </h1>
+                                <span id="uniValue">0</span>
+                            </div>
+                            <div class="calc-bar">
+                                <input id="unidexToken" type="range" name="rng" min="0" max="375000" step="1" value="0"
+                                    oninput="setUndexToken()">
+                            </div>
+                        </div>
+
+                        <div class="cal-result-box">
+                            <H2>Result: <span id="result">0</span></H2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="flex-content-container">
+                        <div class="flex-content">
+                            <div class="cal-right-text">
+                                <h1>How much can I earn for holding?</h1>
+                                <h2>UNIDX rewards are based on fees generate by the platform. Here you can get a general idea of what your reward share would like like through our different products averaged together.</h2>
+                                <h2>Things to know about reward share</h2>
+                                <ul>
+                                    <li><p>Rewards are made to be sent daily on their respective chains however are weighted by time to prevent holders from gaming the system</p></li>
+                                    <li><p>Rewards are based on volume thus more volume means more frequant and larger rewards</p></li>
+                                    <li><p>Rewards can be whatever cryptocurrency a holder selects through offchain tagging</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="col-xl-12 eigth-container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-xl-11 sec-six m-auto">
+                <h1 class="text-center text-white">Learn more about Unidex</h1>
+                <p class="mt-5 text-center mb-5">Chat with the team, others in the community!</p>
+            </div>
+        </div>
+
+        <div class="col-xl-8 social-bg m-auto mb-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xl-3 text-center social-div social-border">
+                    <img src="img/color3.png" class="img-fluid">
+                    <p class="text-white mt-3">Telegram</p>
+                </div>
+
+                <div class="col-xl-3 text-center social-div social-border">
+                    <img src="img/color.png" class="img-fluid">
+                    <p class="text-white mt-3">Discord</p>
+                </div>
+
+                <div class="col-xl-3 text-center social-div social-border">
+                    <img src="img/color4.png" class="img-fluid">
+                    <p class="text-white mt-3">Telegram</p>
+                </div>
+
+                <div class="col-xl-3 text-center social-div">
+                    <img src="img/color2.png" class="img-fluid">
+                    <p class="text-white mt-3">Medium</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="col-xl-12"
+        style="background: #111112;padding:0;border-top: 1px solid grey;border-bottom: 1px solid grey;">
+        <nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center" style="border:0;">
+            <a href="/" class="navbar-brand d-flex  mr-auto"><img src="img/logo.png" class="img-fluid" width="100"></a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link2" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link2" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link2" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link2" href="#">Terms & Conditions</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="col-xl-12" style="background:#171719;padding:0;padding-top:1rem;padding-bottom: 1rem;">
+        <div class="col-xl-11 m-auto">
+            <p class="text-white text-center text-xl-left">© 2021 UniDex All rights reserved</p>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var transections = document.getElementById('transections')
+        var transectionValues = document.getElementById('transectionValues')
+
+        var unidexToken = document.getElementById('unidexToken')
+        var unidexTokenValues = document.getElementById('unidexTokenValues')
+
+
+        var result = document.getElementById('result')
+        var transValue = document.getElementById('transValue')
+        var uniValue = document.getElementById('uniValue')
+
+
+        function setTransnations() {
+            console.log(transections.value);
+            transValue.innerText = transections.value
+            transectionValues.value = transections.value
+            performCalculations(transections.value, unidexToken.value,)
+        }
+
+        function setTransnationsValue() {
+            $('#transections').val(parseInt(transectionValues.value))
+
+            setTransnations()
+
+
+        }
+
+        function setUnidexTokenValues() {
+            $('#unidexToken').val(parseInt(unidexTokenValues.value))
+            setUndexToken()
+        }
+
+
+
+        function setUndexToken() {
+            console.log(unidexToken.value);
+            uniValue.innerText = unidexToken.value
+            unidexTokenValues.value = unidexToken.value
+            performCalculations(transections.value, unidexToken.value)
+        }
+
+
+
+        let performCalculations = (transections, undexToken) => {
+
+let calculatedTransections = (parseFloat(transections) * .0015)
+let percentage = (parseFloat(undexToken) *.05)
+let caluculatedVaule = calculatedTransections * percentage
+console.log('transections', (calculatedTransections));
+console.log('undexToken', percentage);
+result.innerHTML =  + (parseFloat(caluculatedVaule*.05)).toFixed(2)
+}
+    </script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
