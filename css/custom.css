@@ -203,10 +203,10 @@ body {
 .sec-one h1 {
 	font-size: xxx-large;
 	font-family: 'Akira.otf';
-
 }
 
-.sec-one h1 a {
+.sec-one h1 a,
+.typewrite {
 	background: linear-gradient(to right, #ff5972 0%, #919f90 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -393,6 +393,61 @@ body {
 	color: grey;
 	font-size: large;
 
+}
+
+.about-team {
+	padding: 50px 0;
+}
+.about-team .title {
+	color: #30DEAB;
+}
+.team-member p {
+	font-family: Inter;
+	font-size: 16px;
+	line-height: 150%;
+
+	text-align: center;
+	letter-spacing: 0.0016em;
+
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.skill-box {
+	width: 289px;
+	height: 171px;
+
+	padding: 30px;
+	margin: 30px;
+
+	border-radius: 6px;
+	border: 0.5px solid rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+}
+.skill-box.with-image {
+	padding: 30px 100px 15px 15px;
+}
+.skill-box .title {
+	color: rgba(255, 255, 255, 0.8);
+	font-family: 'Akira.otf';
+	font-size: 18px;
+	line-height: 100%;
+}
+.skill-box .description {
+	color: rgba(255, 255, 255, 0.5);
+	font-family: Inter;
+	font-size: 14px;
+	line-height: 150%;
+	letter-spacing: 0.16px;
+}
+.skill-box img {
+	position: absolute;
+	top: 19px;
+	right: 15px;
+
+	width: 80px;
+	height: 80px;
+	border: 0.5px solid rgba(255, 255, 255, 0.5);
+	border-radius: 40px;
 }
 
 .eigth-container {
