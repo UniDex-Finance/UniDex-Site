@@ -58,13 +58,13 @@
                     <div class="left-calculation-holder">
                         <div class="calculator-box">
                             <div class="trans-headeing">
-                                <h1>Daily Transections - <input id="transectionValues" type="number" name="rng" min="0" max="9999999" step="1"
-                                     placeholder="Type number" onchange="setTransnationsValue()"></h1>
+                                <h1>Daily Volume - <input id="volumeValues" type="number" name="rng" min="0" max="9999999" step="1"
+                                     placeholder="Type number" onchange="setVolumeValue()"></h1>
                                 <span id="transValue">0</span>
                             </div>
                             <div class="calc-bar">
-                                <input id="transections" type="range" name="rng" min="0" max="9999999" step="1"
-                                    value="0" oninput="setTransnations()" />
+                                <input id="Volume" type="range" name="rng" min="0" max="999999999" step="1"
+                                    value="0" oninput="setVolume()" />
                             </div>
                         </div>
 
@@ -75,7 +75,7 @@
                             </div>
                             <div class="calc-bar">
                                 <input id="unidexToken" type="range" name="rng" min="0" max="375000" step="1" value="0"
-                                    oninput="setUndexToken()">
+                                    oninput="setunidexToken()">
                             </div>
                         </div>
 
@@ -182,8 +182,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        var transections = document.getElementById('transections')
-        var transectionValues = document.getElementById('transectionValues')
+        var Volume = document.getElementById('Volume')
+        var volumeValues = document.getElementById('volumeValues')
 
         var unidexToken = document.getElementById('unidexToken')
         var unidexTokenValues = document.getElementById('unidexTokenValues')
@@ -194,45 +194,49 @@
         var uniValue = document.getElementById('uniValue')
 
 
-        function setTransnations() {
-            console.log(transections.value);
-            transValue.innerText = transections.value
-            transectionValues.value = transections.value
-            performCalculations(transections.value, unidexToken.value,)
+        function setVolume() {
+            console.log(Volume.value);
+            transValue.innerText = Volume.value
+            volumeValues.value = Volume.value
+            performCalculations(Volume.value, unidexToken.value,)
         }
 
-        function setTransnationsValue() {
-            $('#transections').val(parseInt(transectionValues.value))
+        function setVolumeValue() {
+            $('#Volume').val(parseInt(volumeValues.value))
 
-            setTransnations()
+            setVolume()
 
 
         }
 
         function setUnidexTokenValues() {
             $('#unidexToken').val(parseInt(unidexTokenValues.value))
-            setUndexToken()
+            setunidexToken()
         }
 
 
 
-        function setUndexToken() {
+        function setunidexToken() {
             console.log(unidexToken.value);
             uniValue.innerText = unidexToken.value
             unidexTokenValues.value = unidexToken.value
-            performCalculations(transections.value, unidexToken.value)
+            performCalculations(Volume.value, unidexToken.value)
         }
 
 
 
-        let performCalculations = (transections, undexToken) => {
+        let performCalculations = (Volume, unidexToken) => {
 
-let calculatedTransections = (parseFloat(transections) * .0015)
-let percentage = (parseFloat(undexToken) *.05)
-let caluculatedVaule = calculatedTransections * percentage
-console.log('transections', (calculatedTransections));
-console.log('undexToken', percentage);
-result.innerHTML =  + (parseFloat(caluculatedVaule*.05)).toFixed(2)
+let calculatedVolume = (parseFloat(Volume) * 0.0015)
+let percentage = (parseFloat(unidexToken) / 375000)
+let caluculatedVaule = calculatedVolume * percentage
+
+
+
+
+console.log('Volume', (calculatedVolume));
+console.log('unidexToken', percentage);
+result.innerHTML =  + (parseFloat(caluculatedVaule)).toFixed(2)
 }
     </script>
 
