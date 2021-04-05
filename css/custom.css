@@ -203,16 +203,6 @@ body {
 	padding-bottom: 2rem;
 	position: relative;
 }
-.sec-one::after {
-	content: "";
-	position: absolute;
-	width: 1px;
-	height: 80vh;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	background-color: #505050;
-}
 
 .sec-one h1 {
 	font-size: xxx-large;
@@ -642,10 +632,6 @@ body {
 	.sec-one {
 		padding-top: 10rem;
 	}
-	.sec-one::after {
-		content: none;
-	}
-
 	.sec-two {
 		padding-top: 5rem;
 	}
