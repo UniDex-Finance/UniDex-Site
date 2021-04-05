@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untitled Document</title>
+    <title>UniDex Calculator</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/Group 2531.png"/>
+
     <link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -13,29 +15,28 @@
 
 <body style="background: #131316">
     <nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center fixed-top">
-        <a href="index.html" class="navbar-brand d-flex  mr-auto"><img src="img/logo.png" class="img-fluid"
-                width="100"></a>
+        <a href="index.html" class="navbar-brand d-flex  mr-auto"><img src="img/logo.png" class="img-fluid" width="100"></a>
 
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link nav-link2" href="faq.html">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link2" href="contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link2" href="calculation.html">Reward Calculator</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-secondary" href="#">App</a>
-                </li>
-            </ul>
-        </div>
+		<div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+			<ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link nav-link2" href="faq.html">FAQ</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link2" href="contact.html">Contact Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link2" href="calculator.html">Reward Calculator</a>
+				</li>
+				<li class="nav-item">
+					<a class="btn btn-outline-secondary" href="https://unidexbeta.app/">Enter App</a>
+				</li>
+			</ul>
+		</div>
     </nav>
 
     <div class="col-xl-12 faq-first-cont">
@@ -56,25 +57,22 @@
         <div class="main-calculator-box-container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="left-calculation-holder">
+                    <div class="left-calculator-holder">
                         <div class="calculator-box">
                             <div class="trans-headeing">
-                                <h1>Daily Volume - <input id="volumeValues" type="number" name="rng" min="0"
-                                        max="9999999" step="1" placeholder="Type number" onchange="setVolumeValue()">
-                                </h1>
+                                <h1>Daily Volume - <input id="volumeValues" type="number" name="rng" min="0" max="9999999" step="1"
+                                     placeholder="Type number" onchange="setVolumeValue()"></h1>
                                 <span id="transValue">0</span>
                             </div>
                             <div class="calc-bar">
-                                <input id="Volume" type="range" name="rng" min="0" max="999999999" step="1" value="0"
-                                    oninput="setVolume()" />
+                                <input id="Volume" type="range" name="rng" min="0" max="999999999" step="1"
+                                    value="0" oninput="setVolume()" />
                             </div>
                         </div>
 
                         <div class="calculator-box">
                             <div class="trans-headeing">
-                                <h1>Number of UNIDX tokens - <input id="unidexTokenValues" type="number" name="rng"
-                                        min="0" max="9999999" step="1" placeholder="Type number"
-                                        onchange="setUnidexTokenValues()"> </h1>
+                                <h1>Number of UNIDX tokens - <input id="unidexTokenValues" type="number" name="rng" min="0" max="9999999" step="1"   placeholder="Type number" onchange="setUnidexTokenValues()"> </h1>
                                 <span id="uniValue">0</span>
                             </div>
                             <div class="calc-bar">
@@ -93,23 +91,12 @@
                         <div class="flex-content">
                             <div class="cal-right-text">
                                 <h1>How much can I earn for holding?</h1>
-                                <h2>UNIDX rewards are based on fees generate by the platform. Here you can get a general
-                                    idea of what your reward share would like like through our different products
-                                    averaged together.</h2>
+                                <h2>UNIDX rewards are based on fees generate by the platform. Here you can get a general idea of what your reward share would like like through our different products averaged together.</h2>
                                 <h2>Things to know about reward share</h2>
                                 <ul>
-                                    <li>
-                                        <p>Rewards are made to be sent daily on their respective chains however are
-                                            weighted by time to prevent holders from gaming the system</p>
-                                    </li>
-                                    <li>
-                                        <p>Rewards are based on volume thus more volume means more frequant and larger
-                                            rewards</p>
-                                    </li>
-                                    <li>
-                                        <p>Rewards can be whatever cryptocurrency a holder selects through offchain
-                                            tagging</p>
-                                    </li>
+                                    <li><p>Rewards are made to be sent daily on their respective chains however are weighted by time to prevent holders from gaming the system</p></li>
+                                    <li><p>Rewards are based on volume thus more volume means more frequant and larger rewards</p></li>
+                                    <li><p>Rewards can be whatever cryptocurrency a holder selects through offchain tagging</p></li>
                                 </ul>
                             </div>
                         </div>
@@ -131,29 +118,36 @@
             </div>
         </div>
 
-        <div class="col-xl-8 social-bg m-auto mb-5">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-xl-3 text-center social-div social-border">
-                    <img src="img/color3.png" class="img-fluid">
-                    <p class="text-white mt-3">Telegram</p>
-                </div>
+		<div class="col-xl-8 social-bg m-auto mb-5">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-xl-3 text-center social-div social-border">
+					<a href="https://t.me/unidexfinance">
+					<img src="img/color3.png" class="img-fluid">
+					</a>
+					<p class="text-white mt-3">Telegram</p>
+				</div>
+				<div class="col-xl-3 text-center social-div social-border">
+					<a href="https://discord.gg/WzJPSjGj4h">
+					<img src="img/color.png" class="img-fluid">
+					<p class="text-white mt-3">Discord</p>
+					</a>
+				</div>
 
-                <div class="col-xl-3 text-center social-div social-border">
-                    <img src="img/color.png" class="img-fluid">
-                    <p class="text-white mt-3">Discord</p>
-                </div>
+				<div class="col-xl-3 text-center social-div social-border">
+					<a href="https://twitter.com/UniDexFinance">
+					<img src="img/color4.png" class="img-fluid">
+					<p class="text-white mt-3">Twitter</p>
+					</a>
+				</div>
 
-                <div class="col-xl-3 text-center social-div social-border">
-                    <img src="img/color4.png" class="img-fluid">
-                    <p class="text-white mt-3">Telegram</p>
-                </div>
-
-                <div class="col-xl-3 text-center social-div">
-                    <img src="img/color2.png" class="img-fluid">
-                    <p class="text-white mt-3">Medium</p>
-                </div>
-            </div>
-        </div>
+				<div class="col-xl-3 text-center social-div">
+					<a href="https://unidexfinance.medium.com">
+					<img src="img/color2.png" class="img-fluid">
+					<p class="text-white mt-3">Medium</p>
+					</a>
+				</div>
+			</div>
+		</div>
 
 
     </div>
@@ -169,18 +163,17 @@
             <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
                 <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link nav-link2" href="#">FAQ</a>
+                        <a class="nav-link nav-link2" href="faq.html">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link2" href="#">Contact Us</a>
+                        <a class="nav-link nav-link2" href="contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link2" href="#">Privacy Policy</a>
+                        <a class="nav-link nav-link2" href="calculator.html">Reward Calculator</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link2" href="#">Terms & Conditions</a>
+                        <a class="nav-link nav-link2" href="https://app.gitbook.com/@unidex-1/s/unidex/">View Documentation</a>
                     </li>
-
                 </ul>
             </div>
         </nav>
@@ -213,13 +206,15 @@
             console.log(Volume.value);
             transValue.innerText = parseInt(Volume.value).toLocaleString()
             volumeValues.value = Volume.value
-            performCalculations(Volume.value, unidexToken.value,)
+            performcalculators(Volume.value, unidexToken.value,)
         }
 
         function setVolumeValue() {
             $('#Volume').val(parseInt(volumeValues.value))
 
             setVolume()
+
+
         }
 
         function setUnidexTokenValues() {
@@ -233,21 +228,21 @@
             console.log(unidexToken.value);
             uniValue.innerText = parseInt(unidexToken.value).toLocaleString()
             unidexTokenValues.value = unidexToken.value
-            performCalculations(Volume.value, unidexToken.value)
+            performcalculators(Volume.value, unidexToken.value)
         }
 
 
 
-        let performCalculations = (Volume, unidexToken) => {
+        let performcalculators = (Volume, unidexToken) => {
 
-            let calculatedVolume = (parseFloat(Volume) * 0.0015)
+let calculatedVolume = (parseFloat(Volume) * 0.0015)
             let percentage = (parseFloat(unidexToken) / 375000)
             let caluculatedVaule = calculatedVolume * percentage
 
 
 
 
-            console.log('Volume', (calculatedVolume));
+console.log('Volume', (calculatedVolume));
             console.log('unidexToken', percentage);
             result.innerHTML = (parseFloat(caluculatedVaule)).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
         }
