@@ -355,21 +355,32 @@ body {
 	padding-top: 15rem;
 	padding-bottom: 10rem;
 }
-
-.sixth-logos {
-
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+.coins-wrapper {
 	border-radius: 16px;
-	height: 550px;
-	overflow-y: scroll;
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(50px);
+}
+.coins {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+
+	max-width: 960px;
+	height: 384px;
+	overflow: hidden;
+}
+.coin {
+	width: 64px;
+	height: 64px;
+	margin: 16px;
 }
 
 #style-4::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 	background-color: grey;
 	border-radius: 23px;
-
 }
 
 #style-4::-webkit-scrollbar {
