@@ -11,6 +11,11 @@ body {
 	overflow-x: hidden;
 }
 
+.navbar-brand img {
+	height: 50px;
+	object-fit: contain;
+}
+
 @keyframes animate {
 	0% {
 		transform: scale(1);
@@ -190,14 +195,23 @@ body {
 }
 
 .cont-first {
-	/* background: url("../img/top-bg.png"); */
-	background-size: cover;
+	padding-top: 90px;
 	padding-bottom: 5rem !important;
 }
 
 .sec-one {
-	padding-top: 297px;
-	border-right: 1.5px solid #505050;
+	padding-bottom: 2rem;
+	position: relative;
+}
+.sec-one::after {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 80vh;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #505050;
 }
 
 .sec-one h1 {
@@ -219,11 +233,11 @@ body {
 }
 
 .sec-two {
-	padding-top: 15rem;
+	padding-bottom: 2rem;
 }
 
-.first-container {
-	margin-bottom: 15rem !important;
+.h-100vh {
+	min-height: 100vh;
 }
 
 .sec-container {
@@ -617,6 +631,9 @@ body {
 	.sec-one {
 		padding-top: 10rem;
 	}
+	.sec-one::after {
+		content: none;
+	}
 
 	.sec-two {
 		padding-top: 5rem;
@@ -634,9 +651,6 @@ body {
 		padding-right: 1rem !important;
 	}
 
-	.sec-one {
-		border-right: 0 !important;
-	}
 
 	.sitxth-first {
 		padding-top: 3rem;
@@ -799,4 +813,10 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@media (max-width:480px) {
+	.sec-one {
+		padding-top: 4rem;
+	}
 }
