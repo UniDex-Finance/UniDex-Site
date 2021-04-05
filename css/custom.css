@@ -197,7 +197,6 @@ body {
 
 .sec-one {
 	padding-top: 297px;
-	border-right: 1.5px solid #505050;
 }
 
 .sec-one h1 {
@@ -665,7 +664,7 @@ body {
 	transition: width 200ms linear;
 }
 
-/* Calculation Page */
+/* calculator Page */
 
 .trans-headeing h1 {
 	color: white;
